@@ -1,0 +1,123 @@
+@media (min-width: 200px) and (max-width:1199px) {
+
+    .ultimas-pages {
+        font-size: 1rem;
+        margin: 2.5em 10%;
+    }
+
+    .destacados-pages h2 {
+        display: none;
+    }
+
+    .pages-newslist {
+        display: none;
+    }
+
+    .pages-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 1em;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .destacados-pages {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        padding: 1em;
+        color: white;
+        background-color: $fondo-destacado;
+
+    }
+
+    .pages-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: flex-start;
+        overflow: hidden;
+        background-position: center;
+        border-radius: 15px;
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .pages-card .card-text {
+        height: 40%;
+    }
+
+    .pages-grid {
+        display: grid;
+        grid-template-columns: 40vw 20vw 20vw;
+        grid-template-rows: 45% 45%;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+
+    .pages-card-half-top {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: flex-start;
+        overflow: hidden;
+        background-position: center;
+        border-radius: 15px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .pages-card-half-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: flex-start;
+        overflow: hidden;
+        background-position: center;
+        border-radius: 15px;
+
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .pages-card-half-bottom .card-text {
+        height: 60%;
+    }
+
+    .pages-card-half-top .card-text {
+        height: 60%;
+    }
+
+    .pages-newslist {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        align-items: flex-start;
+        border-left: 1px black solid;
+        padding-left: 3vw;
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+
+    .pages-newslist h3 {
+        margin-bottom: 5px;
+    }
+
+    .pages-newslist h3 {
+        margin-bottom: 25px;
+        font-size: 1rem;
+    }
+
+    .ultimas-pages {
+        font-size: 1rem;
+        margin: 2.5em 5em;
+    }
+
+}

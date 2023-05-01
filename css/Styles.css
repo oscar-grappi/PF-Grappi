@@ -1,595 +1,518 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "roboto", "sans-serif";
+  font-family: "roboto", "sans-serif";
 }
 
 footer {
-    background-color: rgb(59, 57, 57);
-    padding: 25px 15px;
+  background-color: rgb(59, 57, 57);
+  padding: 25px 15px;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 200px) and (max-width: 1199px) {
+  .body__margin-div {
+    font-size: 1rem;
+    margin: 2.5em 10%;
+  }
+  header {
+    background-image: url(../img/header-background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .header__logo-h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  .logo {
+    width: 150px;
+    margin-top: 20px;
+  }
+  header nav .nav-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .img-up {
+    width: 4em;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+  }
+  .footer-title {
     color: white;
-
+    margin-bottom: 25px;
+  }
+  .lista-redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    list-style: none;
+  }
+  .lista-redes li {
+    margin: 5px;
+  }
+  .lista-redes li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .logos-redes {
+    width: 35px;
+  }
+  .texto-redes {
+    font-weight: bold;
+    margin-left: 10px;
+  }
 }
-
-
-
-@media (min-width: 200px) and (max-width:1199px) {
-
-    .body__margin-div {
-        font-size: 1rem;
-        margin: 2.5em 10%;
-    }
-
-    /* ===== HEADER MOBILE ===== */
-
-    header {
-        background-image: url(../img/header-background.jpg);
-        background-size: cover;
-        display: flex;
-        flex-flow: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .header__logo-h1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 20px 0px;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-    }
-
-    hr {
-        margin: 15px 0;
-    }
-
-    .logo {
-        width: 150px;
-        margin-top: 20px;
-    }
-
-    .nav {
-        width: 100%;
-        background-color: rgb(49, 47, 47);
-        padding: 15px 0;
-    }
-
-    header nav .nav-list {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-    }
-
-    .nav-list li {
-        list-style: none;
-    }
-
-    .nav-list li a {
-        padding: 0.5em;
-        border-left: 0.5px white solid;
-        border-right: 0.5px white solid;
-    }
-
-    .nav__li-contact {
-        order: 1;
-    }
-
-    .nav-list li:hover {
-        background-color: red;
-        font-weight: bold;
-    }
-
-    .nav__li-using {
-        display: none;
-    }
-
-    /* ===== BODY MOBILE ===== */
-
-    .destacados-index h2 {
-        display: none;
-    }
-
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-        margin: 15px 0;
-    }
-
-    .index-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-content: center;
-
-        background-image: url(../img/death-stranding.jpg);
-        background-size: cover;
-        background-position: center;
-        width: 70%;
-        height: 27rem;
-        border-radius: 15px;
-        overflow: hidden;
-    }
-
-    .card-text {
-        background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
-        width: 100%;
-        height: 45%;
-        padding: 1em;
-        color: white;
-        overflow: hidden;
-    }
-
-    .card-title {
-        margin-bottom: 10px;
-        font-size: 1.5rem;
-    }
-
-    .index-card-desktop {
-        display: none;
-    }
-
-    aside {
-        display: none;
-    }
-
-    .article-latest {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
-        height: 125px;
-        overflow: hidden;
-        margin-bottom: 2rem;
-        width: 100%;
-    }
-
-    .article-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: flex-start;
-        margin-left: 20px;
-    }
-
-    /* ===== MAIN PAGINAS MOBILE===== */
-
-    .ultimas-pages {
-        font-size: 1rem;
-        margin: 2.5em 10%;
-    }
-
-    .destacados-pages h2 {
-        display: none;
-    }
-
-    .pages-newslist {
-        display: none;
-    }
-
-    .pages-grid{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 1em;
-    }
-
-    .pages-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-content: center;
-
-        background-image: url(../img/death-stranding.jpg);
-        background-size: cover;
-        background-position: center;
-        width: 70%;
-        height: 27rem;
-        border-radius: 15px;
-        overflow: hidden;
-    }
-
-    .pages-card-half-top,
-    .pages-card-half-bottom {
-        display: none;
-    }
-
-    /* ===== FOOTER MOBILE ===== */
-    .img-up {
-        width: 4em;
-        position: fixed;
-        bottom: 1em;
-        right: 1em;
-    }
-
-    .footer-title {
-        color: white;
-        margin-bottom: 25px;
-    }
-
-    .lista-redes {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center;
-        list-style: none;
-    }
-
-    .lista-redes li {
-        margin: 5px;
-    }
-
-    .lista-redes li a {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .logos-redes {
-        width: 35px;
-    }
-
-    .texto-redes {
-        font-weight: bold;
-        margin-left: 10px;
-    }
-
-
-}
-
-
-
 @media (min-width: 1200px) {
-
-    .body__margin-div {
-        font-size: 1rem;
-        margin: 2.5em 5em;
-    }
-
-    /* ===== HEADER ===== */
-
-    header {
-        background-image: url(../img/header-background.jpg);
-        background-size: cover;
-        display: flex;
-        flex-flow: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .header__logo-h1 h1 {
-        margin-left: 10px;
-    }
-
-    h2 {
-        margin-bottom: 20px;
-    }
-
-    hr {
-        margin: 15px 0;
-    }
-
-    .logo {
-        width: 150px;
-        margin-top: 20px;
-    }
-
-    .header__logo-h1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 20px 0px;
-    }
-
-    .nav {
-        width: 100%;
-        background-color: rgb(49, 47, 47);
-        padding: 15px 0;
-    }
-
-    header nav .nav-list {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-    }
-
-    .nav-list li {
-        list-style: none;
-    }
-
-    .nav-list li a {
-        padding: 0px 50px;
-        border-left: 0.5px white solid;
-        border-right: 0.5px white solid;
-    }
-
-    .nav__li-contact {
-        order: 1;
-    }
-
-    .nav-list li:hover {
-        background-color: red;
-        font-weight: bold;
-    }
-
-    /* ===== MAIN ===== */
-
-    .index-main {
-        margin: 15px;
-    }
-
-    .destacados-index {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: flex-start;
-    }
-
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-content: center;
-        margin: 15px 0;
-    }
-
-    .index-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-content: center;
-
-        background-image: url(../img/death-stranding.jpg);
-        background-size: cover;
-        background-position: center;
-        width: 30%;
-        height: 25rem;
-        border-radius: 15px;
-        overflow: hidden;
-    }
-
-    .card-text {
-        background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
-        width: 100%;
-        height: 45%;
-        padding: 1em;
-        color: white;
-        overflow: hidden;
-    }
-
-    .card-title {
-        margin-bottom: 10px;
-        font-size: 1.5rem;
-    }
-
-    .body__ultimas-aside {
-        display: grid;
-        grid-template-columns: 60% 20%;
-        gap: 8rem;
-        justify-content: space-between;
-    }
-
-    .main__aside {
-        border-left: black 1px solid;
-        padding: 1rem 0;
-        padding-left: 1.5rem;
-        justify-items: center;
-        align-items: start;
-    }
-
-    .aside__article {
-        max-height: 150px;
-        overflow: hidden;
-    }
-
-    .publicidad__aside {
-        width: 100%;
-        margin: 1rem 0;
-    }
-
-    .article-latest {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-content: flex-start;
-        height: 125px;
-        overflow: hidden;
-        margin-bottom: 2rem;
-    }
-
-    .article-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: flex-start;
-        margin-left: 20px;
-    }
-
-    /* ===== FOOTER ===== */
-    .img-up {
-        width: 60px;
-        position: fixed;
-        bottom: 15px;
-        right: 15px;
-    }
-
-    .footer-title {
-        color: white;
-        margin-bottom: 25px;
-    }
-
-    .lista-redes {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: center;
-        list-style: none;
-    }
-
-    .lista-redes li {
-        margin: 5px;
-    }
-
-    .lista-redes li a {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .logos-redes {
-        width: 35px;
-    }
-
-    .texto-redes {
-        font-weight: bold;
-        margin-left: 10px;
-    }
-
-    /* ===== ESPECIFICOS CONTACTO ====== */
-
-    .main-contacto {
-        margin: 30px;
-    }
-
-    .main-contacto h2 {
-        margin-bottom: 35px;
-
-    }
-
-    .main-contacto div {
-        margin-bottom: 10px;
-    }
-
-    /* ===== ESPECIFICOS PAGINAS ====== */
-
-    .destacados-pages {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: flex-start;
-        margin: 30px 60px;
-    }
-
-    .pages-card {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-content: flex-start;
-        overflow: hidden;
-        background-position: center;
-        border-radius: 15px;
-        grid-column: 1/2;
-        grid-row: 1/3;
-    }
-
-    .pages-card .card-text {
-        height: 40%;
-    }
-
-    .pages-grid {
-        display: grid;
-        grid-template-columns: 40vw 20vw 20vw;
-        grid-template-rows: 45% 45%;
-        justify-content: space-evenly;
-        align-content: space-evenly;
-    }
-
-    .pages-card-half-top {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-content: flex-start;
-        overflow: hidden;
-        background-position: center;
-        border-radius: 15px;
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .pages-card-half-bottom {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-content: flex-start;
-        overflow: hidden;
-        background-position: center;
-        border-radius: 15px;
-
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-
-    .pages-card-half-bottom .card-text{
-        height: 60%;
-    }
-
-    .pages-card-half-top .card-text{
-        height: 60%;
-    }
-
-    .pages-newslist {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-content: flex-start;
-        align-items: flex-start;
-        border-left: 1px black solid;
-        padding-left: 3vw;
-        grid-column: 3/4;
-        grid-row: 1/3;
-    }
-
-    .pages-newslist h3 {
-        margin-bottom: 5px;
-    }
-
-    .pages-newslist h3 {
-        margin-bottom: 25px;
-        font-size: 1rem;
-    }
-
-    .ultimas-pages {
-        font-size: 1rem;
-        margin: 2.5em 5em;
-    }
+  .body__margin-div {
+    margin: 0 2em;
+  }
+  header {
+    background-image: url(../img/header-background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .header__logo-h1 h1 {
+    margin-left: 10px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  hr {
+    margin-bottom: 1em;
+  }
+  .logo {
+    width: 150px;
+    margin-top: 20px;
+  }
+  .header__logo-h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+  }
+  .img-up {
+    width: 60px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+  }
+  .footer-title {
+    color: white;
+    margin-bottom: 25px;
+  }
+  .lista-redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    list-style: none;
+  }
+  .lista-redes li {
+    margin: 5px;
+  }
+  .lista-redes li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .logos-redes {
+    width: 35px;
+  }
+  .texto-redes {
+    font-weight: bold;
+    margin-left: 10px;
+  }
 }
-
-/* ===== ESPECIFICOS PAGINAS ====== */
-
-.juegos-card {
+@media (min-width: 200px) and (max-width: 1199px) {
+  .nav {
+    width: 100%;
+    background-color: rgb(49, 47, 47);
+    padding: 15px 0;
+  }
+  .nav-list li {
+    list-style: none;
+  }
+  .nav-list li a {
+    padding: 0.5em;
+    border-left: 0.5px white solid;
+    border-right: 0.5px white solid;
+  }
+  .nav-list li:hover {
+    background-color: red;
+    font-weight: bold;
+  }
+  .nav__li-contact {
+    order: 1;
+  }
+  .nav__li-using {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .nav {
+    width: 100%;
+    background-color: rgb(49, 47, 47);
+    padding: 15px 0;
+  }
+  header nav .nav-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  header nav .nav-list li {
+    list-style: none;
+  }
+  header nav .nav-list li a {
+    padding: 0px 50px;
+    border-left: 0.5px white solid;
+    border-right: 0.5px white solid;
+  }
+  header nav .nav-list li:hover {
+    background-color: red;
+    font-weight: bold;
+  }
+  .nav__li-contact {
+    order: 1;
+  }
+}
+@media (min-width: 200px) and (max-width: 1199px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 15px 0;
+  }
+  .index-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
     background-image: url(../img/death-stranding.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 27rem;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .card-text {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+    width: 100%;
+    height: 45%;
+    padding: 1em;
+    color: white;
+    overflow: hidden;
+  }
+  .card-title {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  .index-card-desktop {
+    display: none;
+  }
+  .pages-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    background-image: url(../img/death-stranding.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 27rem;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .pages-card-half-top,
+  .pages-card-half-bottom {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+  }
+  .index-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    background-image: url(../img/death-stranding.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    height: 25rem;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .card-text {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 38%, rgba(121, 9, 9, 0) 100%);
+    width: 100%;
+    height: 45%;
+    padding: 1em;
+    color: white;
+    overflow: hidden;
+  }
+  .card-title {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 200px) and (max-width: 1199px) {
+  .article-latest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding-bottom: 1em;
+    border-bottom: rgb(56, 55, 55) solid 2px;
+  }
+  .article-img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 1200px) {
+  .article-latest {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    max-width: 100%;
+    padding-bottom: 1em;
+    border-bottom: rgb(56, 55, 55) solid 2px;
+  }
+  .article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 200px) and (max-width: 1199px) {
+  .destacados-index h2 {
+    display: none;
+  }
+  aside {
+    display: none;
+  }
+  .ultimas__publicidad-mobile {
+    margin-bottom: 2em;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 2em;
+    border-bottom: rgb(56, 55, 55) solid 2px;
+  }
+}
+@media (min-width: 1200px) {
+  .destacados-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    background-color: rgb(194, 25, 25);
+    color: white;
+    padding: 15px 10px;
+  }
+  .ultimas__publicidad-mobile {
+    display: none;
+  }
+  .body__ultimas-aside {
+    display: grid;
+    grid-template-columns: 70% 20%;
+    gap: 8rem;
+    justify-content: space-between;
+  }
+  .main__aside {
+    border-left: black 1px solid;
+    padding: 1rem 0;
+    padding-left: 1.5rem;
+    justify-items: center;
+    align-items: start;
+  }
+  .aside__article {
+    max-height: 150px;
+    overflow: hidden;
+  }
+  .publicidad__aside {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+.main-contacto {
+  margin: 30px;
 }
 
-.musica-card {
-    background-image: url(../img/rush.jpg);
+.main-contacto h2 {
+  margin-bottom: 35px;
+}
+
+.main-contacto div {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 200px) and (max-width: 1199px) {
+  .ultimas-pages {
+    font-size: 1rem;
+    margin: 2.5em 10%;
+  }
+  .destacados-pages h2 {
+    display: none;
+  }
+  .pages-newslist {
+    display: none;
+  }
+  .pages-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1em;
+  }
+}
+@media (min-width: 1200px) {
+  .destacados-pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding: 1em;
+    color: white;
+    background-color: rgb(194, 25, 25);
+  }
+  .pages-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-start;
+    overflow: hidden;
+    background-position: center;
+    border-radius: 15px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .pages-card .card-text {
+    height: 40%;
+  }
+  .pages-grid {
+    display: grid;
+    grid-template-columns: 40vw 20vw 20vw;
+    grid-template-rows: 45% 45%;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+  }
+  .pages-card-half-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-start;
+    overflow: hidden;
+    background-position: center;
+    border-radius: 15px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .pages-card-half-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-start;
+    overflow: hidden;
+    background-position: center;
+    border-radius: 15px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .pages-card-half-bottom .card-text {
+    height: 60%;
+  }
+  .pages-card-half-top .card-text {
+    height: 60%;
+  }
+  .pages-newslist {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    border-left: 1px black solid;
+    padding-left: 3vw;
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  .pages-newslist h3 {
+    margin-bottom: 5px;
+  }
+  .pages-newslist h3 {
+    margin-bottom: 25px;
+    font-size: 1rem;
+  }
+  .ultimas-pages {
+    font-size: 1rem;
+    margin: 2.5em 5em;
+  }
+}
+.juegos-card {
+  background-image: url(../img/death-stranding.jpg);
 }
 
 .peliculas-card {
-    background-image: url(../img/cage.png);
+  background-image: url(../img/cage.png);
 }
+
+.musica-card {
+  background-image: url(../img/rush.jpg);
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,117 @@
+// CARDS MOBILE
+
+@media (min-width: 200px) and (max-width:1199px) {
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        margin: 15px 0;
+    }
+
+    .index-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: center;
+
+        background-image: url(../img/death-stranding.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 70%;
+        height: 27rem;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .card-text {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+        width: 100%;
+        height: 45%;
+        padding: 1em;
+        color: white;
+        overflow: hidden;
+    }
+
+    .card-title {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    .index-card-desktop {
+        display: none;
+    }
+
+    // CARDS DE PAGINAS
+
+    .pages-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: center;
+
+        background-image: url(../img/death-stranding.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 70%;
+        height: 27rem;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .pages-card-half-top,
+    .pages-card-half-bottom {
+        display: none;
+    }
+
+}
+
+
+
+// ------------------------- CARDS DESKTOP ----------------------------- //
+
+
+
+@media (min-width: 1200px) {
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .index-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: center;
+
+        background-image: url(../img/death-stranding.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 30%;
+        height: 25rem;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .card-text {
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 38%, rgba(121,9,9,0) 100%); 
+        width: 100%;
+        height: 45%;
+        padding: 1em;
+        color: white;
+        overflow: hidden;
+    }
+
+    .card-title {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+}

@@ -1,0 +1,72 @@
+// NAV MOBILE - despues cambiar con un mixin, variables y nesteo (mucho de esto)
+
+@media (min-width: 200px) and (max-width:1199px) {
+    .nav {
+        width: 100%;
+        background-color: rgb(49, 47, 47);
+        padding: 15px 0;
+    }
+
+    .nav-list {
+        li {
+            list-style: none;
+
+            a {
+                padding: 0.5em;
+                border-left: 0.5px white solid;
+                border-right: 0.5px white solid;
+            }
+        }
+
+        li:hover {
+            background-color: red;
+            font-weight: bold;
+        }
+    }
+
+    .nav__li-contact {
+        order: 1;
+    }
+
+    .nav__li-using {
+        display: none;
+    }
+
+
+}
+
+// NAV DESKTOP
+
+@media (min-width: 1200px) {
+
+    .nav {
+        width: 100%;
+        background-color: rgb(49, 47, 47);
+        padding: 15px 0;
+    }
+
+    header nav .nav-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+
+        li {
+            list-style: none;
+
+            a {
+                padding: 0px 50px;
+                border-left: 0.5px white solid;
+                border-right: 0.5px white solid;
+            }
+        }
+
+        li:hover {
+            background-color: red;
+            font-weight: bold;
+        }
+    }
+
+    .nav__li-contact {
+        order: 1;
+    }
+}

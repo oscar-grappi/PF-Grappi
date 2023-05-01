@@ -1,0 +1,211 @@
+// DECLARACIONES GENERALES
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "roboto", "sans-serif";
+}
+
+footer {
+    background-color: rgb(59, 57, 57);
+    padding: 25px 15px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+$fondo-destacado: rgb(194, 25, 25);
+
+// DECLARACIONES MOBILES
+
+@media (min-width: 200px) and (max-width:1199px) {
+
+    .body__margin-div {
+        font-size: 1rem;
+        margin: 2.5em 10%;
+    }
+
+    // HEADER MOBILE
+
+    header {
+        background-image: url(../img/header-background.jpg);
+        background-size: cover;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .header__logo-h1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        width: 150px;
+        margin-top: 20px;
+    }
+
+    header nav .nav-list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    // FOOTER MOBILE
+
+    .img-up {
+        width: 4em;
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+    }
+
+    .footer-title {
+        color: white;
+        margin-bottom: 25px;
+    }
+
+    .lista-redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        list-style: none;
+
+        li {
+            margin: 5px;
+
+            a {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+        }
+    }
+
+    .logos-redes {
+        width: 35px;
+    }
+
+    .texto-redes {
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+}
+
+
+
+// ------------------ DECLARACIONES DESKTOP ---------------------- //
+
+
+
+@media (min-width: 1200px) {
+    
+    .body__margin-div{
+        margin: 0 2em;
+    }
+    
+    // HEADER
+
+    header {
+        background-image: url(../img/header-background.jpg);
+        background-size: cover;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .header__logo-h1 h1 {
+        margin-left: 10px;
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    hr {
+
+        margin-bottom: 1em;
+    }
+
+    .logo {
+        width: 150px;
+        margin-top: 20px;
+    }
+
+    .header__logo-h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px;
+    }
+
+
+    // FOOTER
+
+    .img-up {
+        width: 60px;
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .footer-title {
+        color: white;
+        margin-bottom: 25px;
+    }
+
+    .lista-redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        list-style: none;
+
+        li {
+            margin: 5px;
+
+            a {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
+        }
+    }
+
+    .logos-redes {
+        width: 35px;
+    }
+
+    .texto-redes {
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+}

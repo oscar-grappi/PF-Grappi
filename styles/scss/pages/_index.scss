@@ -1,0 +1,66 @@
+@media (min-width: 200px) and (max-width:1199px) {
+
+    .destacados-index h2 {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .ultimas__publicidad-mobile{
+        margin-bottom: 2em;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 2em;
+        border-bottom: rgb(56, 55, 55) solid 2px;
+    }
+
+}
+
+
+
+@media (min-width: 1200px) {
+
+    .destacados-index {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        background-color: $fondo-destacado;
+        color: white;
+        padding: 15px 10px;
+    }
+
+    .ultimas__publicidad-mobile{
+        display: none;
+    }
+
+    // ASIDE DESKTOP
+
+    .body__ultimas-aside {
+        display: grid;
+        grid-template-columns: 70% 20%;
+        gap: 8rem;
+        justify-content: space-between;
+    }
+
+    .main__aside {
+        border-left: black 1px solid;
+        padding: 1rem 0;
+        padding-left: 1.5rem;
+        justify-items: center;
+        align-items: start;
+    }
+
+    .aside__article {
+        max-height: 150px;
+        overflow: hidden;
+    }
+
+    .publicidad__aside {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+}
