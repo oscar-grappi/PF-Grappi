@@ -5,9 +5,41 @@
 
 .main-contacto h2 {
     margin-bottom: 35px;
-
 }
 
 .main-contacto div {
     margin-bottom: 10px;
+}
+
+span, label{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.nombre input{
+    display: block;
+    width: 25vw;
+}
+
+.email input{
+    display: block;
+    width: 25vw;
+}
+
+.entrada-texto h3{
+    margin: 1em 0;
+}
+
+@media (min-width: 200px) and (max-width:1199px) {
+
+    .nombre input{
+        display: block;
+        width: 50vw;
+    }
+    
+    .email input{
+        display: block;
+        width: 50vw;
+    }
+
 }
