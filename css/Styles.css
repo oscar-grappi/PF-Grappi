@@ -298,11 +298,11 @@ a {
     margin-bottom: 10px;
     font-size: 1.5rem;
   }
-  .index__card-2 {
-    background-image: url(.../img/alonso-taylor.webp);
-  }
   .index__card-3 {
-    background-image: url(/img/alonso-taylor.webp);
+    background-image: url(../img/alonso-taylor.webp);
+  }
+  .index__card-2 {
+    background-image: url(../img/poster-indiana-jones.png);
   }
 }
 @media (min-width: 200px) and (max-width: 1199px) {
@@ -523,11 +523,11 @@ a {
 }
 
 .juegos-card-top {
-  background-image: url(/img/zelda-tears-of-the-kingdom.webp);
+  background-image: url(../img/zelda-tears-of-the-kingdom.webp);
 }
 
 .juegos-card-bottom {
-  background-image: url(/img/star-wars-jedi-survivor.webp);
+  background-image: url(../img/star-wars-jedi-survivor.webp);
 }
 
 .peliculas-card {
@@ -535,23 +535,23 @@ a {
 }
 
 .peliculas-card-top {
-  background-image: url(/img/bullettrain.jpg);
+  background-image: url(../img/bullettrain.jpg);
 }
 
 .peliculas-card-bottom {
-  background-image: url(/img/poster-indiana-jones.png);
+  background-image: url(../img/poster-indiana-jones.png);
 }
 
 .musica-card {
-  background-image: url(/img/alonso-taylor.webp);
+  background-image: url(../img/alonso-taylor.webp);
 }
 
 .musica-card-top {
-  background-image: url(/img/rush.jpg);
+  background-image: url(../img/rush.jpg);
 }
 
 .musica-card-bottom {
-  background-image: url(/img/casiopea.jpg);
+  background-image: url(../img/casiopea.jpg);
 }
 
 /*# sourceMappingURL=styles.css.map */
