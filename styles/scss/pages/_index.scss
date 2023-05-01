@@ -1,9 +1,12 @@
 @media (min-width: 200px) and (max-width:1199px) {
 
-    .destacados-index h2 {
-        display: none;
+    .destacados-index{
+        background-color: $fondo-destacado;
+        color: white;
+        padding: 1em;
     }
-
+        
+    
     aside {
         display: none;
     }
