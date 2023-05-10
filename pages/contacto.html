@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@100;300;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@100;300;700&family=Fugaz+One&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/Styles.css">
     <title>Contacto | RPChill</title>
@@ -25,7 +25,7 @@
         <nav class="nav">
             <ul class="nav-list">
                 <li><a href="../index.html">inicio</a></li>
-                <li class="nav__li-contact nav__li-using"><a href="./contacto.html">contacto</a></li>
+                <li class="nav__li-nosotros nav__li-using"><a href="../pages/nosotros.html">nosotros</a></li>
                 <li><a href="./juegos.html">juegos</a></li>
                 <li><a href="./peliculas.html">peliculas</a></li>
                 <li><a href="./musica.html">musica</a></li>
@@ -35,6 +35,7 @@
 
     <main class="main-contacto">
         <h2>dejanos un mensaje!</h2>
+
         <form action="" class="form">
             <div class="nombre">
                 <label for="nombre">nombre:</label>
@@ -53,13 +54,15 @@
             </div>
             <div class="entrada-texto">
                 <label for="texto">
-                    <h3>dejanos tu comentario:</h3>
+                    <h3>dejanos tu cv o articulo junto a un breve comentario:</h3>
                 </label>
-                <textarea name="texto" id="texto" cols="50" rows="20"></textarea>
+                <textarea name="docs" id="docs" cols="50" rows="20"></textarea>
             </div>
+            <input type="file" name="archivo" id="archivo" value="archivo">
             <div class="boton-enviar">
                 <input type="submit" name="enviar" id="enviar" value="enviar">
             </div>
+
         </form>
     </main>
 

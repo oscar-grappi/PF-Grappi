@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: "Fugaz One", cursive;
+}
+
 body {
   font-family: "roboto", "sans-serif";
 }
@@ -190,7 +194,7 @@ a {
     background-color: red;
     font-weight: bold;
   }
-  .nav__li-contact {
+  .nav__li-nosotros {
     order: 1;
   }
   .nav__li-using {
@@ -221,11 +225,11 @@ a {
     font-weight: bold;
     scale: 1.2;
   }
-  .nav__li-contact {
+  .nav__li-nosotros {
     order: 1;
   }
 }
-@media (min-width: 200px) and (max-width: 1199px) {
+@media (min-width: 200px) and (max-width: 767px) {
   .cards {
     display: flex;
     flex-wrap: wrap;
@@ -279,6 +283,62 @@ a {
   .pages-card-half-bottom {
     display: none;
   }
+  .nosotros__card {
+    height: 350px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 7px 7px 0 black;
+  }
+  .nosotros__card .nosotros__card-imagen {
+    height: 50%;
+    object-fit: cover;
+  }
+  .nosotros__card .nosotros__card-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(194, 25, 25);
+    color: white;
+    height: 50%;
+    border: 1px black solid;
+    padding: 1em;
+  }
+  .nosotros__card .nosotros__card-texto h3 {
+    margin-bottom: 0.7em;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .nosotros__card {
+    height: 380px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 7px 7px 0 black;
+  }
+  .nosotros__card .nosotros__card-imagen {
+    height: 40%;
+    object-fit: cover;
+  }
+  .nosotros__card .nosotros__card-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(194, 25, 25);
+    color: white;
+    height: 60%;
+    border: 1px black solid;
+    padding: 1em;
+  }
+  .nosotros__card .nosotros__card-texto h3 {
+    margin-bottom: 0.7em;
+  }
 }
 @media (min-width: 1200px) {
   .cards {
@@ -319,6 +379,33 @@ a {
   }
   .index__card-2 {
     background-image: url(../img/poster-indiana-jones.png);
+  }
+  .nosotros__card {
+    height: 350px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 7px 7px 0 black;
+  }
+  .nosotros__card .nosotros__card-imagen {
+    height: 50%;
+    object-fit: cover;
+  }
+  .nosotros__card .nosotros__card-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(194, 25, 25);
+    color: white;
+    height: 50%;
+    border: 1px black solid;
+    padding: 1em;
+  }
+  .nosotros__card .nosotros__card-texto h3 {
+    margin-bottom: 0.7em;
   }
 }
 @media (min-width: 200px) and (max-width: 1199px) {
@@ -422,16 +509,15 @@ a {
 .main-contacto {
   margin: 30px;
 }
-
 .main-contacto h2 {
   margin-bottom: 35px;
 }
-
 .main-contacto div {
   margin-bottom: 10px;
 }
 
-span, label {
+span,
+label {
   font-weight: bold;
   text-transform: capitalize;
 }
@@ -448,6 +534,10 @@ span, label {
 
 .entrada-texto h3 {
   margin: 1em 0;
+}
+
+.boton-enviar {
+  margin-top: 0.5em;
 }
 
 @media (min-width: 200px) and (max-width: 1199px) {
@@ -597,6 +687,102 @@ span, label {
 
 .musica-card-bottom {
   background-image: url(../img/casiopea.jpg);
+}
+
+.nosotros__equipo {
+  padding: 1em;
+}
+
+.nosotros__historia {
+  padding: 1em;
+}
+
+.nosotros__btn {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.nosotros__btn-unite {
+  width: 40%;
+  height: 50px;
+  background-color: rgb(194, 25, 25);
+  color: white;
+  font-family: "roboto", "sans-serif";
+  font-size: x-large;
+  border: 2px black solid;
+  border-radius: 30px;
+}
+.nosotros__btn-unite:hover {
+  scale: 1.05;
+  font-weight: bolder;
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+  .nosotros__div-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+  .nosotros__historia img {
+    display: none;
+  }
+  .nosotros__historia .nosotros__historia-texto {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .nosotros__div-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .nosotros__historia {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+  }
+  .nosotros__historia img {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+  }
+  .nosotros__historia .nosotros__historia-texto {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    order: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .nosotros__div-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .nosotros__historia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: center;
+  }
+  .nosotros__historia img {
+    width: 100%;
+    object-fit: cover;
+    height: 350px;
+  }
+  .nosotros__historia .nosotros__historia-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

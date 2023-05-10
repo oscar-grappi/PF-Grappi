@@ -1,43 +1,52 @@
-
 .main-contacto {
+
     margin: 30px;
+
+    h2 {
+        margin-bottom: 35px;
+    }
+
+    h3{
+        
+    }
+
+    div {
+        margin-bottom: 10px;
+    }
 }
 
-.main-contacto h2 {
-    margin-bottom: 35px;
-}
-
-.main-contacto div {
-    margin-bottom: 10px;
-}
-
-span, label{
+span,
+label {
     font-weight: bold;
     text-transform: capitalize;
 }
 
-.nombre input{
+.nombre input {
     display: block;
     width: 25vw;
 }
 
-.email input{
+.email input {
     display: block;
     width: 25vw;
 }
 
-.entrada-texto h3{
+.entrada-texto h3 {
     margin: 1em 0;
+}
+
+.boton-enviar {
+    margin-top: 0.5em;
 }
 
 @media (min-width: 200px) and (max-width:1199px) {
 
-    .nombre input{
+    .nombre input {
         display: block;
         width: 50vw;
     }
-    
-    .email input{
+
+    .email input {
         display: block;
         width: 50vw;
     }
