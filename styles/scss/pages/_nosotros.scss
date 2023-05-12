@@ -9,22 +9,23 @@
 .nosotros__btn {
     text-align: center;
     margin: 2em 0;
+
+    &:hover {
+        font-weight: bolder;
+    }
 }
 
 .nosotros__btn-unite {
-    width: 40%;
-    height: 50px;
     background-color: $fondo-destacado;
     color: white;
     font-family: "roboto", "sans-serif";
     font-size: x-large;
     border: 2px black solid;
     border-radius: 30px;
+    padding: 0.5em 2em;
 
-    &:hover {
-        scale: 1.05;
-        font-weight: bolder;
-    }
+
+
 }
 
 @media (min-width: 200px) and (max-width:767px) {
@@ -33,6 +34,10 @@
         flex-direction: column;
         align-items: center;
         gap: 2em;
+
+        p {
+            font-size: 1rem;
+        }
     }
 
     .nosotros__historia {
@@ -61,6 +66,7 @@
         justify-content: space-evenly;
     }
 
+
     .nosotros__historia {
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -78,6 +84,37 @@
             flex-direction: column;
             height: 100%;
             order: 1;
+        }
+    }
+
+    .nosotros__card {
+        height: 380px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 7px 7px 0 black;
+
+        .nosotros__card-imagen {
+            height: 40%;
+            object-fit: cover;
+        }
+
+        .nosotros__card-texto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: $fondo-destacado;
+            color: white;
+            height: 60%;
+            border: 1px black solid;
+            padding: 1em;
+
+            h3 {
+                margin-bottom: 0.7em;
+            }
         }
     }
 }

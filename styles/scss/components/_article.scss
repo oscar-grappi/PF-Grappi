@@ -11,6 +11,10 @@
         width: 100%;
         padding-bottom: 1em;
         border-bottom: rgb(56, 55, 55) solid 2px;
+
+        h3 {
+            margin-bottom: 0.5em;
+        }
     }
 
     .article-img{
@@ -33,8 +37,14 @@
         margin-bottom: 2rem;
         max-width: 100%;
         padding-bottom: 1em;
-        border-bottom: rgb(56, 55, 55) solid 2px;
+        border-bottom: rgb(56, 55, 55) solid 2px;      
         
+        h3, h4{
+            margin-bottom: 0.5em;
+            &:hover{
+                color: $fondo-destacado;
+            }
+        }
     }
 
     .article-text {

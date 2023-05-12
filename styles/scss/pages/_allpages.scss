@@ -5,12 +5,12 @@
         margin: 2.5em 10%;
     }
 
-    .destacados-pages{
+    .destacados-pages {
         background-color: $fondo-destacado;
         color: white;
         padding: 1em;
     }
-    
+
 
     .pages-newslist {
         display: none;
@@ -109,13 +109,21 @@
         grid-row: 1/3;
     }
 
-    .pages-newslist h3 {
-        margin-bottom: 5px;
-    }
+    .pages-newslist {
 
-    .pages-newslist h3 {
-        margin-bottom: 25px;
-        font-size: 1rem;
+        li {
+            color: white;
+
+            &:hover{
+                color: black;
+            }
+        }
+
+        h3 {
+            margin-bottom: 25px;
+            font-size: 1rem;
+        }
+
     }
 
     .ultimas-pages {

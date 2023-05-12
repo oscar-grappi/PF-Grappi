@@ -1,17 +1,17 @@
 @media (min-width: 200px) and (max-width:1199px) {
 
-    .destacados-index{
+    .destacados-index {
         background-color: $fondo-destacado;
         color: white;
         padding: 1em;
     }
-        
-    
+
+
     aside {
         display: none;
     }
 
-    .ultimas__publicidad-mobile{
+    .ultimas__publicidad-mobile {
         margin-bottom: 2em;
         width: 100%;
         justify-content: center;
@@ -35,7 +35,7 @@
         padding: 15px 10px;
     }
 
-    .ultimas__publicidad-mobile{
+    .ultimas__publicidad-mobile {
         display: none;
     }
 
@@ -59,6 +59,10 @@
     .aside__article {
         max-height: 150px;
         overflow: hidden;
+        
+        h4:hover{
+            color: $fondo-destacado;
+        }
     }
 
     .publicidad__aside {
